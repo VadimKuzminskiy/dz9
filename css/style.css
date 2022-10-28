@@ -332,6 +332,7 @@ input {
 }
 
 .newcard {
+    margin-right: -10px;
     margin-bottom: 100px;
 }
 
@@ -339,7 +340,7 @@ input {
 
 table {
     background: #FFFFFF;
-    width: 100%;
+    width: 1120px
 }
 
 tr:not(:last-child){
@@ -431,6 +432,18 @@ th:not(:last-child):not(:first-child){
     padding: 0 20px;
 }
 
+.a__youtube:hover svg path {
+    fill: red;
+}
+
+.a_facebook:hover svg  path {
+    fill: dodgerblue;
+}
+
+.a__instagram:hover svg path {
+    fill: purple;
+}
+
 .social__footer::after {
     content: "";
     clear: both;
@@ -455,3 +468,4 @@ th:not(:last-child):not(:first-child){
 .header__phone:hover {
     color: #F13C6E;
 }
+
