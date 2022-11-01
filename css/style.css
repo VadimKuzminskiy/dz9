@@ -62,15 +62,6 @@ body {
     padding-right: 20px;
 } 
 
-.beauty {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.1em;
-    color: #F13C6E;
-    text-transform: uppercase;
-}
-
 .header__button {
     padding: 12px 46px;
     background: #FFFFFF;
@@ -96,15 +87,18 @@ body {
 
 .logo__a {
     display: inline-block;
-    vertical-align: middle;
-} 
+    /* vertical-align: middle; */
+    float: left;
+}  
 
-.logo__beauty {
+/* .logo__beauty {
     display: inline-block;
-}
+} */
+
 .phone__button {
+    display: inline-block;
     float: right;
-    padding: 40px 0;
+    padding: 30px 0;
 
 }
 /* header3 */
@@ -140,6 +134,10 @@ body {
     padding-top: 190px;
     padding-bottom: 190px;
     width: 308px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 .h2__chair {
@@ -150,13 +148,6 @@ body {
     color: #FFFFFF;
 }
 
-.p__chair {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #FFFFFF;
-    padding-bottom: 50px;
-}
 
 .a__chair {
     font-weight: 400;
@@ -170,6 +161,8 @@ body {
     border: 2px solid #FFFFFF;
     border-radius: 40px;
     padding: 12px 26px;
+    margin-top: 50px;
+    display: block;
 }
 
 .a__chair:hover {
@@ -212,31 +205,41 @@ body {
     display: block;
     padding: 20px 0;
     font-weight: 500;
-font-size: 21px;
-line-height: 25px;
-text-align: center;
-letter-spacing: 0.05em;
-
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
 }
 
 .buy {
     font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-letter-spacing: 0.05em;
-color: #FFFFFF;
-background: #F13C6E;
-border-radius: 30px;
-padding: 9px 52px;
-display: inline-block;
-margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #F13C6E;
+    border-radius: 30px;
+    padding: 9px 52px;
+    display: inline-block;
+    margin-bottom: 25px;
 }
 
-.buy:hover {
+.card:hover .buy { 
     color: #F13C6E;
-    background: #FFFFFF;
+    background: #E5E5E5;
+    font-weight: 700; 
+    text-transform: uppercase; 
 }
+
+.card:hover .price {
+    color: #F13C6E;
+}
+
+.card:hover .card__h3 {
+    color: #F13C6E;
+}
+
 
 .card {
     display: inline-block;
@@ -254,7 +257,6 @@ margin-bottom: 25px;
 
 /* newcard */
 
-/* casd new */
 
 .card__email {
     background: #F13C6E;
